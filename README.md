@@ -5,3 +5,6 @@
 - [Условия лабораторных работ](https://m33041.notion.site/cac7cb733e3c410998b3046880fad1c8)
 - [Конспекты](https://xrem.github.io/web/)
 
+### *Лабораторная работа №1*
+
+![Макет HTML-страницы](https://ibb.co/6W2X5VL)
