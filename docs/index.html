@@ -110,7 +110,14 @@
     </article>
     <aside style="color: white">
         <code>
-            npm run build:program-rust
+            <pre>
+                export async function establishConnection(): Promise {
+                    const rpcUrl = await getRpcUrl();
+                    connection = new Connection(rpcUrl, 'confirmed');
+                    const version = await connection.getVersion();
+                    console.log('Connection to cluster established:', rpcUrl, version);
+                }
+            </pre>
         </code>
     </aside>
 </main>
