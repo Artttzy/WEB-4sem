@@ -4,6 +4,10 @@ h1 {
     font-weight: bold;
     color: white;
     text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 h2 {
     font-family: "Book Antiqua", serif;
@@ -11,6 +15,8 @@ h2 {
     font-weight: bold;
     color: white;
     text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 3px;
 }
 h3 {
     font-family: "Book Antiqua", serif;
@@ -18,6 +24,8 @@ h3 {
     font-style: italic;
     color: white;
     text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 3px;
 }
 h4 {
     font-family: "Book Antiqua", serif;
@@ -25,11 +33,17 @@ h4 {
     font-style: italic;
     color: white;
     text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 3px;
 }
 p {
     font-family: "Book Antiqua", serif;
     font-size: 14px;
     color: white;
+    line-height: 1.5;
+    text-indent: 20px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
 }
 body {
     background: url('https://media.discordapp.net/attachments/971509690938818590/1023738026632958083/1614268077_12-p-chernii-graficheskii-fon-13.jpg?width=960&height=540') no-repeat;
@@ -65,10 +79,18 @@ div {
     background-color: black;
     border: 3px solid;
     border-color: white;
+    box-shadow: 0 0 5px 3px white;
 }
 div.nav {
     width: 250px;
     height: 100px;
     margin-top: 10px;
     margin-left: 55px
+}
+img {
+    box-shadow: 0 0 5px 5px white;
+}
+
+h2.line-through {
+    text-decoration: line-through;
 }
