@@ -47,10 +47,7 @@ p {
 }
 body {
     background: url('https://media.discordapp.net/attachments/971509690938818590/1023738026632958083/1614268077_12-p-chernii-graficheskii-fon-13.jpg?width=960&height=540') no-repeat;
-    -moz-background-size: 100%;
-    -webkit-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 150%;
+    background-size: 100% 100%;
 }
 a {
     color: white;
@@ -75,16 +72,20 @@ font {
 section {
     margin: 30px;
 }
-div {
+div.flex-element {
     background-color: black;
     border: 3px solid;
     border-color: white;
     box-shadow: 0 0 5px 3px white;
 }
 div.nav {
+    background-color: black;
+    border: 3px solid;
+    border-color: white;
+    box-shadow: 0 0 5px 3px white;
     width: 250px;
     height: 100px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 55px
 }
 img {
@@ -93,4 +94,84 @@ img {
 
 h2.line-through {
     text-decoration: line-through;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-content: start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+    div.flex-element {
+        width: 50%;
+        margin: 10px;
+    }
+    div.nav {
+        margin: 10px;
+        width: 20em;
+    }
+    article {
+        display: none
+    }
+}
+
+.grid-table {
+    display: grid;
+    grid-template-columns: minmax(100px, 400px) minmax(150px, 400px) minmax(100px, 400px);
+    grid-template-rows: 50px 50px 50px 50px;
+    max-width: 1200px;
+    min-width: 400px;
+    margin-top: 5%;
+    border-color: white;
+    border: 5px;
+    box-shadow: 0 0 5px 3px white;
+
+}
+thead,
+tbody,
+tr {
+    display: contents;
+}
+
+th,
+td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background: black;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: orange;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    background: #af4e04;
+}
+td:nth-child(4n+1){
+    font-size: 1.1rem;
+}
+
+tr:nth-child(even) td {
+    background: orange;
 }
