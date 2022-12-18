@@ -92,6 +92,14 @@ div.nav {
     color: yellow;
 }
 
+.inactive {
+    color: white
+}
+
+.current {
+    color: purple
+}
+
 
 img {
     box-shadow: 0 0 5px 5px white;

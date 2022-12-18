@@ -3,20 +3,24 @@ $(function () {
         var location = window.location.href;
         var link = this.href;
         if(location == link) {
+            $(this).removeClass()
             $(this).addClass('active');
         }
     });
     $('div.nav a').hover(function () {
-        $(this).css("color", "purple");
+        $(this).removeClass()
+        $(this).addClass('current')
     },
         function () {
             var location = window.location.href;
             var link = this.href;
             if(location == link) {
-                $(this).css("color", "yellow");
+                $(this).removeClass()
+                $(this).addClass('active')
             }
             else {
-                $(this).css("color", "white");
+                $(this).removeClass()
+                $(this).addClass('inactive')
             }
     });
 });
