@@ -1,0 +1,26 @@
+.display-review {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 5px 3px white;
+    position: relative;
+    left: 44%;
+    margin-top: 20px;
+}
+
+.loader-gif {
+    position: relative;
+    left: 35%;
+}
+
+.error-gif {
+    position: relative;
+    left: 40%;
+}
+
+.span-title {
+    color: white;
+}
+
+.span-body {
+    color: white;
+}

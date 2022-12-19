@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="solana nft blockchain defi web3 projects">
     <meta name="description" content="Mongo Labs - это объединение WEB3 программистов, дизайнеров, художников и коммьюнити менедженов, разрабатывающее Blockchain и NFT-проекты в экосистеме Solana">
-    <title>FORM</title>
+    <title>CONTACTS</title>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script defer src="/js/main-script.js"></script>
-    <script defer src="/js/form-script.js"></script>
+    <script defer src="/js/reviews-script.js"></script>
     <link href="https://allfont.ru/allfont.css?fonts=book-antiqua" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="../css/form-styles.css">
     <link rel="stylesheet" href="../css/main-styles.css">
+    <link rel="stylesheet" href="../css/reviews-styles.css">
 </head>
 <body>
 <header>
@@ -50,27 +50,29 @@
 </header>
 
 <main>
-    <h2 style="margin-top: 50px">СПИСОК ЖЕЛАЕМЫХ ДЛЯ ПРИОБРЕТЕНИЯ КРИПТОВАЛЮТ</h2>
-    <form class="crypto-form">
-        <label for="input-crypto" class="label-crypto">КРИПТОВАЛЮТА:</label>
-        <input id="input-crypto" class="input-crypto" name="crypto" type="text" placeholder="Название криптовалюты">
-        <label for="input-count" class="label-count">КОЛИЧЕСТВО:</label>
-        <input id="input-count" class="input-count" name="crypto-count" type="text" placeholder="Количество токенов">
-        <input class="submit-button" type="submit">
-    </form>
-    <button class="clear-all-button" onclick="clearAll()">Очистить список</button>
+    <h2 style="margin-top: 50px">ОТЗЫВЫ О НАШИХ ПРОЕКТАХ</h2>
+    <div id="current"></div>
 
-    <div class="todo-list">
-    </div>
+    <template id="template-button">
+        <button class="display-review" onclick="displayFilter()">ПОСМОТРЕТЬ ОТЗЫВЫ</button>
+    </template>
 
-    <template id="template">
-        <div class="todo-item">
-            <input type="checkbox" class="checkbox">
-            <span></span>
-            <button class="clear-button">Удалить</button>
+    <template id="template-list">
+        <div class="review-title">
+            <span id="span-title" class="span-title"></span>
+        </div>
+        <div class="review-body">
+            <span id="span-body" class="span-body"></span>
         </div>
     </template>
 
+    <template id="template-loader">
+        <img class="loader-gif" src="../gifs/loader.gif" alt="LOADING">
+    </template>
+
+    <template id="template-error">
+        <img class="error-gif" src="../gifs/error.gif" alt="ERROR">
+    </template>
 </main>
 
 <footer>
