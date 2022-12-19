@@ -50,7 +50,7 @@
 }
 
 .todo-list {
-    background: orange;
+    background: white;
     margin-top: 10vh;
     width: 40%;
     padding: 1%;
@@ -61,6 +61,6 @@
 .todo-item{
     font-size: 1.2rem;
     font-weight: bold;
-    background: rgb(255, 255, 255, 0.7);
+    background: gray;
     padding: 1%;
 }
