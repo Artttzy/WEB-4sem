@@ -2,7 +2,7 @@ $(function () {
     $('div.nav a').each(function () {
         var location = window.location.href;
         var link = this.href;
-        if(location == link) {
+        if(location === link) {
             $(this).removeClass()
             $(this).addClass('active');
         }
@@ -14,7 +14,7 @@ $(function () {
         function () {
             var location = window.location.href;
             var link = this.href;
-            if(location == link) {
+            if(location === link) {
                 $(this).removeClass()
                 $(this).addClass('active')
             }
