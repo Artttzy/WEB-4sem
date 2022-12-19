@@ -1,0 +1,66 @@
+.crypto-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+
+.label-crypto {
+    color: white;
+    margin: 10px;
+}
+
+.label-count {
+    color: white;
+    margin: 10px;
+}
+
+.input-crypto {
+    box-shadow: 0 0 5px 3px white;
+    margin: 10px;
+}
+
+.input-count {
+    box-shadow: 0 0 5px 3px white;
+    margin: 10px;
+}
+
+.submit-button {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 5px 3px white;
+    position: absolute ;
+    margin-top: 40px;
+}
+
+.clear-all-button {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 5px 3px white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clear-button {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 5px 3px white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todo-list {
+    background: white;
+    margin-top: 10vh;
+    width: 40%;
+    padding: 1%;
+    justify-self: center;
+    align-self: center;
+}
+
+.todo-item{
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: gray;
+    padding: 1%;
+}
