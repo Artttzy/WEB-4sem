@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="solana nft blockchain defi web3 projects">
+    <meta name="description" content="Mongo Labs - это объединение WEB3 программистов, дизайнеров, художников и коммьюнити менедженов, разрабатывающее Blockchain и NFT-проекты в экосистеме Solana">
+    <title>FORM</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script defer src="js/main-script.js"></script>
+    <script defer src="js/form-script.js"></script>
+    <link href="https://allfont.ru/allfont.css?fonts=book-antiqua" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/form-styles.css">
+    <link rel="stylesheet" href="css/main-styles.css">
+</head>
+<body>
+<header>
+    <div class="flex-container">
+        <div style="margin-top: 13px; width: 220px; height: 220px" class="flex-element">
+            <img style="position: absolute" src="https://media.discordapp.net/attachments/971509690938818590/1023739071241142352/MZVCqLki_400x400.jpg"
+                 width="220" height="220">
+        </div>
+        <div>
+            <div style="width: 90%; height: 100px; margin-top: 10px; margin-left: 5%; margin-right: 5%" class="flex-element">
+                <h1>Mongo Labs</h1>
+            </div>
+            <nav class="flex-container">
+                <div  class="nav">
+                    <a href="index.html">
+                        <h2>ГЛАВНАЯ</h2>
+                    </a>
+                </div>
+                <div class="nav">
+                    <a href="projects.html">
+                        <h2>ПРОЕКТЫ</h2>
+                    </a>
+                </div>
+                <div class="nav">
+                    <a href="form.html">
+                        <h2>ФОРМА</h2>
+                    </a>
+                </div>
+                <div class="nav">
+                    <a href="reviews.html">
+                        <h2>ОТЗЫВЫ</h2>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <h2 style="margin-top: 50px">СПИСОК ЖЕЛАЕМЫХ ДЛЯ ПРИОБРЕТЕНИЯ КРИПТОВАЛЮТ</h2>
+    <form class="crypto-form">
+        <label for="input-crypto" class="label-crypto">КРИПТОВАЛЮТА:</label>
+        <input id="input-crypto" class="input-crypto" name="crypto" type="text" placeholder="Название криптовалюты">
+        <label for="input-count" class="label-count">КОЛИЧЕСТВО:</label>
+        <input id="input-count" class="input-count" name="crypto-count" type="text" placeholder="Количество токенов">
+        <input class="submit-button" type="submit">
+    </form>
+    <button class="clear-all-button" onclick="clearAll()">Очистить список</button>
+
+    <div class="todo-list">
+    </div>
+
+    <template id="template">
+        <div class="todo-item">
+            <input type="checkbox" class="checkbox">
+            <span></span>
+            <button class="clear-button">Удалить</button>
+        </div>
+    </template>
+
+</main>
+
+<footer>
+    <div style="background-color: white; height: 70px; margin-top: 50px" >
+        <h2 style="color: black" class="line-through">ALL RIGHTS RESERVED</h2>
+        <span id="load_time"></span>
+    </div>
+</footer>
+</body>
+</html>

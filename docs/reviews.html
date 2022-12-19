@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="solana nft blockchain defi web3 projects">
+    <meta name="description" content="Mongo Labs - это объединение WEB3 программистов, дизайнеров, художников и коммьюнити менедженов, разрабатывающее Blockchain и NFT-проекты в экосистеме Solana">
+    <title>CONTACTS</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script defer src="js/main-script.js"></script>
+    <script defer src="js/reviews-script.js"></script>
+    <link href="https://allfont.ru/allfont.css?fonts=book-antiqua" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/main-styles.css">
+    <link rel="stylesheet" href="css/reviews-styles.css">
+</head>
+<body>
+<header>
+    <div class="flex-container">
+        <div style="margin-top: 13px; width: 220px; height: 220px" class="flex-element">
+            <img style="position: absolute" src="https://media.discordapp.net/attachments/971509690938818590/1023739071241142352/MZVCqLki_400x400.jpg"
+                 width="220" height="220">
+        </div>
+        <div>
+            <div style="width: 90%; height: 100px; margin-top: 10px; margin-left: 5%; margin-right: 5%" class="flex-element">
+                <h1>Mongo Labs</h1>
+            </div>
+            <nav class="flex-container">
+                <div  class="nav">
+                    <a href="index.html">
+                        <h2>ГЛАВНАЯ</h2>
+                    </a>
+                </div>
+                <div class="nav">
+                    <a href="projects.html">
+                        <h2>ПРОЕКТЫ</h2>
+                    </a>
+                </div>
+                <div class="nav">
+                    <a href="form.html">
+                        <h2>ФОРМА</h2>
+                    </a>
+                </div>
+                <div class="nav">
+                    <a href="reviews.html">
+                        <h2>ОТЗЫВЫ</h2>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <h2 style="margin-top: 50px">ОТЗЫВЫ О НАШИХ ПРОЕКТАХ</h2>
+    <div id="current"></div>
+
+    <template id="template-button">
+        <button class="display-review" onclick="displayFilter()">ПОСМОТРЕТЬ ОТЗЫВЫ</button>
+    </template>
+
+    <template id="template-list">
+        <div class="review-title">
+            <span id="span-title" class="span-title"></span>
+        </div>
+        <div class="review-body">
+            <span id="span-body" class="span-body"></span>
+        </div>
+    </template>
+
+    <template id="template-loader">
+        <img class="loader-gif" src="gifs/loader.gif" alt="LOADING">
+    </template>
+
+    <template id="template-error">
+        <img class="error-gif" src="gifs/error.gif" alt="ERROR">
+    </template>
+</main>
+
+<footer>
+    <div style="background-color: white; height: 70px; margin-top: 50px" >
+        <h2 style="color: black" class="line-through">ALL RIGHTS RESERVED</h2>
+        <span id="load_time"></span>
+    </div>
+</footer>
+</body>
+</html>
